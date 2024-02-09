@@ -1,0 +1,26 @@
+.logo img {
+  width: 10rem;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item:hover {
+  color: var(--dark-light) !important;
+}
+
+.link-item::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 0;
+  bottom: -0.3rem;
+  left: 0;
+  background-color: var(--dark-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}

@@ -9,7 +9,9 @@
   --white-color: #f5f5f5;
   --container-width: 110rem;
   --margin: 3.2rem;
-  --gap: 3.2rem;
+  --gap: 2.6rem;
+  --small-text: 1.6rem;
+  --text-color: #82828f;
 }
 
 /* reset some defult styles  */
@@ -40,6 +42,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .container {
@@ -53,8 +56,17 @@ img {
   margin-bottom: var(--margin);
 }
 
+.big-margin {
+  margin-top: 8.4rem;
+  margin-bottom: 8.4rem;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .justify-center {
@@ -69,10 +81,35 @@ img {
   align-items: center;
 }
 
+.item-start {
+  align-items: flex-start;
+}
+
 .item-end {
   align-items: flex-end;
 }
 
+.item-baseline {
+  align-items: baseline;
+}
+
 .gap-md {
   gap: var(--gap);
+}
+
+.small-text {
+  font-size: var(--small-text);
+}
+
+.big-text {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.text-primary {
+  color: var(--text-color) !important;
+}
+
+.text-decoration {
+  text-decoration: underline;
 }

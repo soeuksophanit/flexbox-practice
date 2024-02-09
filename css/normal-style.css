@@ -1,0 +1,48 @@
+.hero-img {
+  width: 26rem;
+  padding: 3.2rem;
+  background-color: var(--dark-gray);
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.hero-img::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-light);
+  border-radius: 1.6rem 0 0 0;
+  z-index: -1;
+  transform: translate(-2.2rem, -2.2rem);
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-light);
+  border-radius: 0 0 1.6rem 0;
+  z-index: -1;
+  transform: translate(2.2rem, 2.2rem);
+}
+
+.line {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--dark-gray);
+}
+
+.title {
+  gap: 0.3rem;
+}
+
+.clamp {
+  font-size: clamp(5rem, 2rem, 60rem);
+  font-weight: 700;
+}

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3 ease-out;
+}
+
+.btn:hover {
+  background-color: #ed9e73;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color) !important;
+}

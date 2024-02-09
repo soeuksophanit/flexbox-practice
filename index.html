@@ -13,8 +13,58 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/components/button.css" />
     <link rel="stylesheet" href="./css/components/navbar.css" />
+    <link rel="stylesheet" href="./css/normal-style.css" />
     <!-- --------------- -->
     <title>Practice Flexbox CSS</title>
   </head>
-  <body></body>
+  <body>
+    <!-- our main header  -->
+    <header class="header container margin-y flex justify-between item-center">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/logo/Logo.svg" alt="our logo" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="links flex gap-md">
+          <li>
+            <a class="link-item small-text text-primary" href="#"
+              >Free 3D Products</a
+            >
+          </li>
+          <li>
+            <a class="link-item small-text text-primary" href="#"
+              >3D shapes for sketch</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="register flex gap-md item-center">
+        <a href="#" class="small-text text-primary text-decoration">Sign In</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+      </div>
+    </header>
+    <!-- ---------------- -->
+
+    <!-- our hero section  -->
+    <section class="container big-margin flex justify-between item-center">
+      <div class="flex flex-col gap-md item-start">
+        <p class="title small-text text-primary flex item-baseline">
+          <span class="line"></span><span>3D Product</span>
+        </p>
+        <p class="clamp">Wide Range of 3D Products Design.</p>
+        <p class="text-primary small-text">
+          You will get your all 3D elements - wide range of vectors and PNG
+          files
+        </p>
+        <a class="btn btn-primary" href="#">Browser for 3D Shapes</a>
+      </div>
+      <div>
+        <div class="hero-img flex item-center justify-center">
+          <img src="./assets/images/cat6.png" alt="a cute cat" />
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- -->
+  </body>
 </html>
