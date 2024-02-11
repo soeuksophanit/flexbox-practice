@@ -45,6 +45,12 @@ img {
   object-position: center;
 }
 
+/* my own reusable classes TW Concept  */
+
+.w-full {
+  width: 100%;
+}
+
 .container {
   width: var(--container-width);
   margin-right: auto;
@@ -97,6 +103,10 @@ img {
   gap: var(--gap);
 }
 
+.gap-sm {
+  gap: 1.2rem;
+}
+
 .small-text {
   font-size: var(--small-text);
 }
@@ -110,6 +120,18 @@ img {
   color: var(--text-color) !important;
 }
 
+.text-secondary {
+  color: var(--dark-light) !important;
+}
+
 .text-decoration {
   text-decoration: underline;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
