@@ -5,6 +5,7 @@
   background-color: var(--dark-gray);
   border-radius: 3rem;
   right: 2.2rem;
+  cursor: pointer;
 }
 
 .hero-img::after {
@@ -18,6 +19,7 @@
   border-radius: 3rem 0 0 0;
   z-index: -1;
   transform: translate(-2.2rem, -2.2rem);
+  transition: all 0.3s ease-in-out;
 }
 
 .hero-img::before {
@@ -31,6 +33,17 @@
   border-radius: 0 0 3rem 0;
   z-index: -1;
   transform: translate(2.2rem, 2.2rem);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-img:hover::after,
+.hero-img.hero-img:hover::before {
+  transform: translate(0, 0);
+  background-color: transparent;
+}
+
+.hero-img:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 0.7rem 2.9rem 0;
 }
 
 .line {
@@ -58,7 +71,8 @@
 }
 
 #product .product-img {
-  width: 12rem;
+  width: 10rem;
+  height: 14rem;
 }
 
 .img-collapse {
