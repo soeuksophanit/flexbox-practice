@@ -4,6 +4,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   transition: all 0.3 ease-out;
+  position: relative;
 }
 
 .btn:hover {
@@ -13,4 +14,40 @@
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white-color) !important;
+}
+
+.btn-style::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  border: 0.2rem solid var(--dark-light);
+  border-right-style: none;
+  border-bottom-style: none;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0;
+  right: 0;
+  border: 0.2rem solid var(--dark-light);
+  border-top-style: none;
+  border-left-style: none;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover::after {
+  transform: translate(-15%, -15%);
+}
+
+.btn:hover::before {
+  transform: translate(15%, 15%);
 }
